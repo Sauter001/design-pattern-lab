@@ -1,4 +1,6 @@
-# 디자인 패턴 Lab
+# Design Pattern Lab
+
+<img src="design-pattern-lab-logo.png" width="400">
 
 GoF 23개 패턴을, 두 개의 도메인을 직접 만들면서 "필요해서 생겨나는" 방식으로 재발견하는 학습 lab.
 한 단계씩 [docs/levels/](docs/levels/)의 문서를 따라가며 진행한다. 레벨 0(시작)부터 차례로 연다.
