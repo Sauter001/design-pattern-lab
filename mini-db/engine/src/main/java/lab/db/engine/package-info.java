@@ -3,6 +3,9 @@
  *
  * <p>의존 방향: storage 위에서만 동작한다. frontend를 알지 않는다.
  *
+ * <p>토대 타입(제공됨, 패턴 아님): {@link lab.db.engine.Row}, {@link lab.db.engine.Table}.
+ * 그냥 데이터 운반체다. 레벨 7, 22 등의 before가 이 모양을 가정한다. 상세는 docs/levels/foundation.md.
+ *
  * <p>등장 예정 패턴 (계획서 3-2):
  * <ul>
  *   <li>Strategy: 조인 알고리즘 교체 (NLJ/Hash/Sort-Merge, 외부 옵티마이저가 갈아끼움)</li>

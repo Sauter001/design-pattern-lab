@@ -4,4 +4,6 @@ dependencies {
     "implementation"(project(":mini-spring:container"))
     "implementation"(project(":mini-spring:mvc"))
     "implementation"(project(":mini-db:frontend"))
+    // 드라이버 어댑터가 frontend.parse로 짜고 engine으로 실행해 Row를 돌려주므로 engine도 직접 안다.
+    "implementation"(project(":mini-db:engine"))
 }
