@@ -48,9 +48,7 @@ String dbUrl = ConfigRegistry.getInstance().get("db.url");
 
 ```java
 // 테스트에서 설정을 갈아끼우고 싶은데
-ConfigRegistry.getInstance().
-
-set("db.url","test-db");  // 전역을 건드림 -> 다음 테스트로 샌다
+ConfigRegistry.getInstance().set("db.url", "test-db");  // 전역을 건드림 -> 다음 테스트로 샌다
 // 가짜 레지스트리로 통째로 바꾸고 싶어도, getInstance()를 직접 부르는 코드가
 // 사방에 박혀 있어서 손댈 데가 없다
 ```
@@ -97,4 +95,4 @@ set("db.url","test-db");  // 전역을 건드림 -> 다음 테스트로 샌다
 after 커밋이랑 회고까지 끝냈어요? 그럼 본인이 손본 그 구조에 이름이 있었는지 볼 차례예요. [정답과 이정표](answers/level-17.md)를 열어 refactoring.guru 카탈로그랑 본인 코드를
 견줘 보세요. 이번 건 혼자 가는 단계라 혼자 대조하면 되고요. 단, before와 after에 같은 이름이 붙는 묘한 단계라, 그게 무슨 뜻인지는 답에서 짚을게요.
 
-아직 before -> 고통 -> after를 다 안 거쳤다면 지금은 덮어 두세요. 이름표를 먼저 붙이면, 본인 손으로 풀어 본 경험이 통째로 날아가요. 그게 이 단계의 전부인데요.
+아직 before -> 고통 -> after를 다 안 거쳤다면 지금은 덮어 두세요. 특히 이번 건 이름을 미리 알아 봤자 소용도 없어요. before도 after도 같은 이름이거든요. 뭐가 달라졌는지는 겪은 손만 알아요.

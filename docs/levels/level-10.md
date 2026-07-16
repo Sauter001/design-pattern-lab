@@ -43,6 +43,8 @@ class Container {
 }
 ```
 
+`PostgresDataSource`니 `RedisCacheManager`니 하는 것도 레벨 9처럼 이름만 그럴싸한 껍데기로 두고요. 진짜 Postgres 붙이는 날은 안 와요. 여기선요.
+
 동작은 해요. `env` 보고 환경에 맞는 걸 만들어 주죠. **여기까지 첫 커밋.** before예요.
 
 ## 환경이 늘고, 식구도 늘어요

@@ -31,6 +31,8 @@ class AdminDashboardHandler implements Handler {
 }
 ```
 
+아, `CurrentUser`는 별거 아니에요. 지금 사용자 역할 하나 돌려주는 정적 스텁이면 돼요. 인증을 진짜로 붙이는 건 오늘 일이 아니라서요.
+
 동작은 해요. 관리자 아니면 403, 맞으면 대시보드. **여기까지 첫 커밋.** before예요.
 
 ## 보안팀이 옵니다

@@ -40,12 +40,8 @@ WorkContext template = buildDefault();
 
 // 작업이 시작될 때마다: 그 하나를 받아 쓴다
 WorkContext ctx = template;
-ctx.attributes.
-
-put("user",currentUser);
-ctx.trail.
-
-add("started");
+ctx.attributes.put("user", currentUser);
+ctx.trail.add("started");
 ```
 
 동작은 해요. 첫 작업은요. **여기까지 첫 커밋.** before예요.
@@ -61,15 +57,9 @@ add("started");
 
 ```java
 WorkContext ctx = new WorkContext();
-ctx.budget =
-
-loadBudget();          // 무거운 기본 준비를 또
-ctx.attributes.
-
-putAll(DEFAULTS);    // 기본값을 또 깐다
-ctx.attributes.
-
-put("user",currentUser);
+ctx.budget = loadBudget();           // 무거운 기본 준비를 또
+ctx.attributes.putAll(DEFAULTS);     // 기본값을 또 깐다
+ctx.attributes.put("user", currentUser);
 ```
 
 이걸 작업 시작하는 자리마다 해요. 요청 핸들러에도, 배치 잡에도, 테스트 하니스에도요. 그리고 곧 이런 요구가 붙죠.
@@ -81,7 +71,7 @@ put("user",currentUser);
 
 ```java
 WorkContext ctx = new WorkContext();
-ctx.attributes =template.attributes;   // 그냥 참조만 복사. 빨라 보이죠?
+ctx.attributes = template.attributes;   // 그냥 참조만 복사. 빨라 보이죠?
 ```
 
 **여기까지 두 번째 커밋.** 일단 박아 두세요. 마지막 저 줄이 특히요. 곧 다시 봐요.
