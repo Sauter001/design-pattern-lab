@@ -44,3 +44,5 @@ build/
 ### 개인
 unseen/
 .claude/
+# 페르소나 설정은 unseen/persona.md를 참조하므로 학습자에게 노출하지 않는다.
+/CLAUDE.md
